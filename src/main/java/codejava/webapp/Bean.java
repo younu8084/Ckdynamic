@@ -14,17 +14,17 @@ public class Bean {
 	}
 	public void curr()
 	{
-		switch(opt)
+		
+		if(opt.equalsIgnoreCase("Dollar"))
 		{
-		case "Dollar" :
 			res=71*num;
-			break;
-		case "Euro" :
+		}else if(opt.equalsIgnoreCase("Euro"))
+		{
 			res=78*num;
-			break;
-		case "Yen" :
+			
+		}else if(opt.equalsIgnoreCase("Yen"))
+		{
 			res=184*num;
-			break;
 		}
 		
 	}
