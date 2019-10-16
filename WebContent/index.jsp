@@ -43,7 +43,7 @@ div {
 
 </head>
 <body>
-	<div align="center">
+	<div>
 	<form action ="controller"  method="post">
 			<table>
 			
