@@ -43,9 +43,9 @@ div {
 
 </head>
 <body>
-	<div>
+	<div align="center">
 	<form action ="controller"  method="post">
-			<table align="center">
+			<table>
 			
            <tr><td> <h1> Currency Converter</h1></td></tr>
 			
