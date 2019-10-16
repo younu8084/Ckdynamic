@@ -1,18 +1,17 @@
-pipeline {
+pipeline
+{
     agent any
+    
     tools{
     maven 'Maven'
     }
-    stages {
-
-      stage('clean')
-            {
-                steps
-                 { 
-                    sh 'mvn clean install'
+    
+   stages{
+    stage('Build')
+        {
+            steps{
+              sh 'mvn clean install'
                  }
-            }
-            
-     
-          }
+         }
+      }
 }
