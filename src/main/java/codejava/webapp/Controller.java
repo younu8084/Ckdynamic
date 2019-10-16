@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		try
-		{
 		 PrintWriter out= resp.getWriter();
 			String trigerFrom = req.getParameter("bookButton");
 			if (trigerFrom.equals("check")) 
@@ -25,11 +23,6 @@ public class Controller extends HttpServlet {
 			out.println("<h1>"+num+"Equivalent Indian Rupee is"+b.getRes()+"</h1>");
 			out.close();
 			}
-		}
-		catch(IOException ex) 
-        { 
-            System.out.println("Exception caught in catch block"); 
-        } 
 
 	} 
 
