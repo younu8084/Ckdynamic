@@ -21,16 +21,9 @@ public class Controller extends HttpServlet {
 			int n=Integer.parseInt(num);
 			Bean b=new Bean(opt,n);
 			b.curr();
-			try{		
-				PrintWriter out= resp.getWriter();
-				out.println("<h1>"+num+"Equivalent Indian Rupee is"+b.getRes()+"</h1>");
-				out.close();
-			     }
-			catch(Exception e)
-			   {
-			      e.printStackTrace();
-				}
-		}
-	} 
+			PrintWriter out= resp.getWriter();
+			out.println("<h1>"+num+"Equivalent Indian Rupee is"+b.getRes()+"</h1>");
+			out.close();			
+		} 
 
 }
