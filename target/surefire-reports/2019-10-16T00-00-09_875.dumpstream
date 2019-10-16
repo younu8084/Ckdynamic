@@ -1,0 +1,4 @@
+# Created at 2019-10-16T00:00:10.251
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Ckdynamic\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
