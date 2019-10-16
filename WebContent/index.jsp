@@ -43,23 +43,24 @@ div {
 
 </head>
 <body>
-<body>
-<div class="bg-text" align="center">
+	<div>
 	<form action ="controller"  method="post">
-			<table>
-			<h1> Currency Converter</h1>
+			<table align="center">
 			
-			<select name  ="Currency">
+           <tr><td> <h1> Currency Converter</h1></td></tr>
+			
+			 <tr><td> <select name  ="Currency">
 			<option selected>Dollar</option>
 			<option> Euro </option>
 			<option> Yen </option>
-			</select>
-				<tr><td align="center"><input type="number" size=25  placeholder="Enter dollar Value" name="num" required/></td></tr>
-				<tr><td align="center">
-				<tr><td align="center"><input type="submit"  value="check" name="bookButton"  > <input type="Reset"></td></tr>
+			</select> </td></tr>
+				<tr><td ><input type="number" size=25  placeholder="Enter dollar Value" name="num" required/></td></tr>
+				<tr><td>
+				<tr><td><input type="submit"  value="check" name="bookButton"  > <input type="Reset"></td></tr>
 			</table>
 			<br>
 	</form>
 </div>
-</body>
+		</body>
+
 </html>
