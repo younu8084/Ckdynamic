@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.wipro</groupId>
   <artifactId>dynamic_new</artifactId>
-  <version>${BUILB_NUMBER}</version>
+  <version>${BUILD_NUMBER}</version>
   <packaging>war</packaging>
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
