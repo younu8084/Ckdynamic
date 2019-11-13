@@ -25,7 +25,7 @@ pipeline
        stage('performance test')
        {
            steps
-           {blazeMeterTest abortJob: true, credentialsId: 'e49d3c9f-0b7c-40e5-a305-7c37986d0ecf', getJtl: true, getJunit: true, testId: '7422528.taurus', workspaceId: '390151'
+           {blazeMeterTest abortJob: true, credentialsId: 'a0335198-0971-4c33-8cbd-266356d105ec', getJtl: true, getJunit: true, testId: '7422713.taurus', workspaceId: '390151'
            }
        }
    }
