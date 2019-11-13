@@ -22,7 +22,7 @@ pipeline
     blazeMeterTest credentialsId: '066244b3-2b67-4823-854d-4caccd20a1f8', getJtl: true, getJunit: true, testId: '7420370.functionalApi', workspaceId: '389232'
     }
     }
-       stage('perfiormance test')
+       stage('performance test')
        {
            steps
            {blazeMeterTest credentialsId: '066244b3-2b67-4823-854d-4caccd20a1f8', getJtl: true, getJunit: true, testId: '7421221.taurus', workspaceId: '389232'
