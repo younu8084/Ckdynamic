@@ -19,8 +19,7 @@ pipeline
     {
     steps
     {
-    blazeMeterTest credentialsId: '123', getJtl: true, getJunit: true, testId: '7422490.functionalApi', workspaceId: '390025'
-    }
+   blazeMeterTest credentialsId: '123', getJtl: true, getJunit: true, testId: '7422490.functionalApi', workspaceId: '390025'
     }
        stage('performance test')
        {
