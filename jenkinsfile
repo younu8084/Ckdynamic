@@ -14,4 +14,9 @@ pipeline
                  }
          }
          }
+         stage('deploy')
+         {
+         deploy adapters: [tomcat9(credentialsId: '5dec52ab-cb49-4ff4-a77b-61b3548a9a0c', path: '', url: 'http://13.235.70.131:8090/')], contextPath: 'thalapathy', onFailure: false, war: '**/*.war'
          }
+         }
+         
