@@ -16,7 +16,7 @@ pipeline
          }
           stage('Uploading playbook to Ansible'){
             steps{
-                withCredentials([string(credentialsId: 'ansadmin_password', variable: 'ansadmin_password')]){
+                withCredentials([string(credentialsId: 'ansadmin_passwor', variable: 'ansadmin_password')]){
 
                 sh 'sshpass -p ${ansadmin_password} scp -v demo.yml ansadmin@ip-172-31-6-239:/opt/playbooks'
                 }
@@ -25,7 +25,7 @@ pipeline
         }
         stage('Uploading war file to Ansible'){
             steps{
-                withCredentials([string(credentialsId: 'ansadmin_password', variable: 'ansadmin_password')]){
+                withCredentials([string(credentialsId: 'ansadmin_passwor', variable: 'ansadmin_password')]){
                 
                 sh 'sshpass -p ${ansadmin_password} ssh -v -o StrictHostKeyChecking=no ansadmin@ip-172-31-6-239 \"cd /opt/playbooks/; wget -O dynamic_new-${BUILD_NUMBER}.war  /var/lib/jenkins/workspace/first/target/dynamic_new-${BUILD_NUMBER}.war"'
                 }
