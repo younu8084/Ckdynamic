@@ -2,8 +2,6 @@
 - hosts: all_hosts
   become: true
   tasks:
-          - name: deploy war file to slave1 from jenkins workspace
-            action: src=/var/lib/jenkins/workspace/first/target/dynamic_new-${BUILD_NUMBER}.war dest=/home/ec2-user/jenkins.sh/apache-tomcat-8.5.49/webapps
-          - name: deploy war file to slave2 from jenkins workspace
-            action: src=/var/lib/jenkins/workspace/first/target/dynamic_new-${BUILD_NUMBER}.war dest=/usr/lib/apache-tomcat/apache-tomcat-8.5.49/webapps
+       - name: deploy war file to slave from jenkins workspace
+       action: src=/var/lib/jenkins/workspace/first/target/dynamic_new-${BUILD_NUMBER}.war dest=/usr/lib/apache-tomcat/apache-tomcat-8.5.49/webapps
             
