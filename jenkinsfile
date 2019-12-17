@@ -18,7 +18,13 @@ pipeline
                 }
             }
         }
-         
+         stage('Executing Playbook'){
+            steps{
+                withCredentials([string(credentialsId: 'ans', variable: 'ansadmin_password')]){//-C \"export VAULTPASS=${ansadmin_password};
+                    sh 'sshpass -p ${ansadmin_password} ssh -v -o StrictHostKeyChecking=no ansadmin@172-31-6-239  \"ansible-playbook /opt/playbooks/demo.yml\"'
+               
+                }
+            }
          }
          }
          
