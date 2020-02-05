@@ -10,7 +10,7 @@ pipeline
                  }
          }
           
-        /*stage('deploy ansible'){
+        stage('deploy ansible'){
             steps{
                 withCredentials([string(credentialsId: 'ans', variable: 'ansadmin_password')]){
                 sh 'sshpass -p ${ansadmin_password} ssh -v -o StrictHostKeyChecking=no ansadmin@ip-172-31-6-239 \"cd /opt/playbooks; wget -O dynamic_new-1.war  /var/lib/jenkins/workspace/ansible/target/dynamic_new-1.war"'
